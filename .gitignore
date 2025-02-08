@@ -1,0 +1,16 @@
+# .gitignore
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+.DS_Store
+.env
+.idea/
+.vscode/
+
+build-errors.log
+.tmp/
+
+# Docker-related files
+.docker/
