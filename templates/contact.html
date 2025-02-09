@@ -1,0 +1,11 @@
+<!-- templates/contact.html -->
+{{ template "navbar" . }}
+<div class="content">
+    <h1>Contact Information</h1>
+    <ul>
+        <li>Email: {{ .Email }}</li>
+        <li>GitHub: <a href="{{ .GitHub }}">{{ .GitHub }}</a></li>
+        <li>LinkedIn: <a href="{{ .LinkedIn }}">{{ .LinkedIn }}</a></li>
+        <li>Location: {{ .Location }}</li>
+    </ul>
+</div>

@@ -1,0 +1,14 @@
+<!-- templates/books.html -->
+{{ template "navbar" . }}
+<div class="content">
+    <h1>Reading List</h1>
+    <!-- Loop through books -->
+    {{ range . }}
+    <div class="book">
+        <h3>{{ .Title }}</h3>
+        <p>Author: {{ .Author }}</p>
+        <p>ISBN: {{ .ISBN }}</p>
+        <p>{{ .Summary }}</p>
+    </div>
+    {{ end }}
+</div>

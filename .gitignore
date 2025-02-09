@@ -1,16 +1,35 @@
-# .gitignore
+# Ignore compiled binaries and temporary files
 *.exe
 *.exe~
 *.dll
 *.so
 *.dylib
+*.log
+*.tmp
+
+# Ignore macOS .DS_Store files
 .DS_Store
+
+# Ignore environment variable files
 .env
+.env.*
+!.env.example
+
+# Ignore IDE configuration files
 .idea/
 .vscode/
 
-build-errors.log
-.tmp/
+# Ignore build directories
+build/
+dist/
+vendor/
 
-# Docker-related files
+# Ignore Docker related files
 .docker/
+
+# Ignore log files
+logs/
+*.log
+
+# Ignore other temporary files
+.tmp/
